@@ -1,0 +1,7 @@
+torch
+pytorch_lightning
+transformers
+accelerate
+tqdm
+numpy
+torchvision
