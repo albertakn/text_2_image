@@ -14,7 +14,7 @@ class SelfAttention(nn.Module):
         self.n_heads = n_heads
         self.d_head = d_embed // n_heads
 
-    def forward(self, x, mask=False):
+    def forward(self, x, causal_mask=False):
         # x: # (Batch_Size, Seq_Len, Dim)
 
         # (Batch_Size, Seq_Len, Dim)
@@ -35,9 +35,9 @@ class SelfAttention(nn.Module):
         # (Batch_Size, H, Seq_Len, Dim / H) @ (Batch_Size, H, Dim / H, Seq_Len) -> (Batch_Size, H, Seq_Len, Seq_Len)
         weight = q @ k.transpose(-1, -2)
 
-        if mask:
-            mask = torch.ones_like(weight, dtype=torch.bool).triu(1)
-            weight.masked_fill_(mask, -torch.inf) 
+        if causal_mask:
+            causal_mask = torch.ones_like(weight, dtype=torch.bool).triu(1)
+            weight.masked_fill_(causal_mask, -torch.inf) 
 
         # (Batch_Size, H, Seq_Len, Seq_Len) -> (Batch_Size, H, Seq_Len, Seq_Len)
         weight /= math.sqrt(self.d_head) 
