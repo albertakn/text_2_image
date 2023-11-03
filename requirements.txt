@@ -5,3 +5,4 @@ accelerate
 tqdm
 numpy
 torchvision
+bitsandbytes
