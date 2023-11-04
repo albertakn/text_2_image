@@ -23,9 +23,14 @@ So your folders should be like this:
     └─
 
     text_2_image(-main)/
-    ├─
+    ├─ data/
+    │  ├─ v1-5-pruned-emaonly.ckpt
+    │  ├─ ...
+    ├──
+    │
+    │
     ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
+    │                    # Documentation files (alternatively `doc`)
     ├── src                     # Source files (alternatively `lib` or `app`)
     ├── test                    # Automated tests (alternatively `spec` or `tests`)
     ├── tools                   # Tools and utilities
