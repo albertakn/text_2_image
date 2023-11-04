@@ -28,6 +28,7 @@ Example of usage can be found in the following files:
   - stable_diffusion_usage.ipynb
   - textual_inversion_usage.ipynb
   - dreambooth_usage.ipynb
+
 Comparison of fine-tuning methods are in the comparison.ipynb
 
 ## References:
