@@ -12,7 +12,7 @@ from accelerate.utils import set_seed
 from .dataset import PromptDataset, DreamBoothDataset, collate_fn
 from .utils import get_time_embedding, freeze_params
 from ..stable_diffusion.pipeline.ddpm import DDPMSampler
-
+from ..stable_diffusion.pipeline.pipeline import generate
 
 def run_dreambooth(models, tokenizer, hyperparameters):
     logging_dir = Path(hyperparameters["output_dir"], "logs")
@@ -194,7 +194,7 @@ def run_dreambooth(models, tokenizer, hyperparameters):
                 noisy_latents, noise = sampler.add_noise(latents, timesteps)
 
                 # Get the text embedding for conditioning
-                encoder_hidden_states = models['clip'](batch["input_ids"])[0]
+                encoder_hidden_states = models['clip'](batch["input_ids"])
 
 
                 # Predict the noise residual
