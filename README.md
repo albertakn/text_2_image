@@ -29,7 +29,7 @@ Example of usage can be found in the following files:
   - textual_inversion_usage.ipynb
   - dreambooth_usage.ipynb
 
-Comparison of fine-tuning methods are in the comparison.ipynb
+Comparison of fine-tuning methods is in the comparison.ipynb
 
 ## References:
 - https://github.com/CompVis/stable-diffusion/tree/main
