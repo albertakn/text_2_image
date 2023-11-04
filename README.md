@@ -30,8 +30,9 @@ So your folders should be like this:
     │  ├─ modules/
     │  ├─ ...
     ├─ dreambooth/ 
-    │  ├─ 
-    │  ├─ 
+    │  ├─ dreambooth.py
+    │  ├─  ...
+    ...
     └── README.md
 
 ## How to use:
