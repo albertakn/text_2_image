@@ -26,15 +26,12 @@ So your folders should be like this:
     ├─ data/
     │  ├─ v1-5-pruned-emaonly.ckpt
     │  ├─ ...
-    ├──
-    │
-    │
-    ├── build                   # Compiled files (alternatively `dist`)
-    │                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
+    ├─ stable_diffusion/
+    │  ├─ modules/
+    │  ├─ ...
+    ├─ dreambooth/ 
+    │  ├─ 
+    │  ├─ 
     └── README.md
 
 ## How to use:
