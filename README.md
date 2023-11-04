@@ -22,7 +22,7 @@ So your folders should be like this:
     ...
     └─
 
-    .
+    text_2_image(-main)/
     ├── build                   # Compiled files (alternatively `dist`)
     ├── docs                    # Documentation files (alternatively `doc`)
     ├── src                     # Source files (alternatively `lib` or `app`)
